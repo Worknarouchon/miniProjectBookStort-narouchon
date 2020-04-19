@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{book.name}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <h4><p>รหัสหนังสือ: {{book.id}}</p></h4>
+  <p>ชื่อหนังสือ: {{book.name}}</p>
+  <p>ชื่อผู้เเต่ง: {{book.author}}</p>
+  <p>สำนักพิมพ์: {{book.publisher}}</p>
+  <p>ประเภท: {{book.category}}</p>
+  <h1><p>ราคา: {{book.price}}</p></h1>
+
+  <ion-buttons>
+    <button ion-button color="secondary" outline (click)="gotoSaledetailPage()">
+      เพิ่มสินค้าลงตระกร้า
+    </button>
+  </ion-buttons>
+  
+  <p>
+    <img [src]="book.img" alt="">
+  </p> 
+  <p>เนื้อเรื่องย่อ: {{book.detail}}</p>
+</ion-content>  

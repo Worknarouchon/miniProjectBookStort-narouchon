@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>รายการสินค้าของฉัน</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item-sliding  *ngFor="let todo of todolist"> 
+      <ion-item>
+        <h3>ชื่อหนังสือ : {{todo.title}}</h3>
+        <h3>จำนวนที่สั่ง : {{todo.description}}</h3>
+        <h3>ราคาหนังสือ : {{todo.price}}</h3>
+        <h3>หมายเหตุ : {{todo.note}}</h3>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger" (click)="removeItem(todo)">
+          Delete
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

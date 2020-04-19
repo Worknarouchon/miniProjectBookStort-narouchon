@@ -1,17 +1,23 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>ร้านค้าหนังสือ BOOK BooK</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content padding class="card-background-page">
+
+    <ion-card (click)="goToYunovelbookPage()"  > 
+      <img src="https://storage.naiin.com/system/application/bookstore/resource/banner/202004/d65182b028754bcd8bcd510d0a6ce209.jpg" alt="">
+      <p>รายการหนังสือดังขายดี</p>
+    </ion-card>
+  
+  <ion-card (click)="goToNewsPage()">
+    <ion-card-header>
+     <h3>ห้องข่าวธุรกิจ</h3>  
+    </ion-card-header>
+    <ion-card-content> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRTVgiAODwP-5w72-7H3hJhIIYq_qlHGKvesUA_C1o3ztqzVhsn&usqp=CAU" alt="">
+    </ion-card-content>
+    <p>สำหรับติดตามข่าวที่น่าสนใจของรายวัน Business News room</p>
+  </ion-card>
+
 </ion-content>

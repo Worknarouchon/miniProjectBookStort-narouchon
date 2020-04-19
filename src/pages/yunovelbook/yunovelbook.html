@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>นิยายวาย นิยายยูริ</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let book of yunovelbook" (click)="goToYunovelbookdetailPage(book.id)">
+      <ion-avatar item-start >
+        <img [src]="book.img" alt="">
+      </ion-avatar>
+      <h2>{{book.name}}</h2>
+      <p>{{book.price}}</p>
+    </ion-item>
+  </ion-list> 
+</ion-content>

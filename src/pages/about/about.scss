@@ -1,3 +1,21 @@
 page-about {
+    .card-background-page{
+        ion-card{
+            position: relative;
+            text-align: center;
+        }
+        .card-title{
+            position: absolute;
+            top:36%;
+            font-size: 2.0em;
+            width: 100%;
+            font-weight: bold;
+            color: #f1ff26;
+        }
+    }
+    .content{text-align: center;}
+    ion-content {
+        background: rgb(249, 255, 197) !important;  
+    }
 
 }

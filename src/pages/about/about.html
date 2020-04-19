@@ -1,11 +1,39 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      ร้านค้าหนังสือ
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-
+<ion-content padding class="card-background-page">
+  <ion-card (click)="goToBookschinaPage()"  > 
+    <img src="https://image.dek-d.com/contentimg/2016/ying/l9.jpg" alt="">
+    <div class="card-title" >นิยายแปลจีน</div>
+    <p>นิยายแปลจีน</p>
+  </ion-card>
+  
+    <ion-card (click)="goToBookscomicPage()" >
+      <img src="https://mpics.mgronline.com/pics/Images/558000010309301.JPEG" alt="">
+      <div class="card-title">การ์ตูน</div>
+      <p>การ์ตูน</p>
+    </ion-card>
+  
+    <ion-card (click)="goToYunovelbookPage()" >
+        <img src="https://pbs.twimg.com/media/DNnrxJJVoAADA_j.jpg" alt="">
+        <div class="card-title">นิยายวาย นิยายยูริ</div>
+        <p>นิยายวาย นิยายยูริ</p>
+      </ion-card>
+  
+      <ion-card (click)="goToLiteraturebooksPage()" >
+        <img src="https://www.catdumb.tv/wp-content/uploads/2019/08/05-08-192.jpg" alt="">
+        <div class="card-title">วรรณกรรม</div>
+        <p>วรรณกรรม</p>
+      </ion-card>
+  
+      <ion-card (click)="goToHomebooksPage()" >
+        <img src="https://favforward.com/app/uploads/2017/06/%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%AA%E0%B8%A7%E0%B8%99_1.jpg" alt="">
+        <div class="card-title">บ้านเเละสวน</div>
+        <p>บ้านเเละสวน</p>
+      </ion-card>
 </ion-content>
